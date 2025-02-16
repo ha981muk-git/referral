@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friend Referral Hub</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+        
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Friend Referral Hub",
+        "url": "https://ha981muk-git.github.io/",
+        "description": "Discover the latest offers, bonuses, and rewards with premium referral links!",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://ha981muk-git.github.io/search?q={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+    
+    <meta name="description" content="Friend Referral Hub - Discover the latest referrals, bonuses, and rewards with premium referral links">
+
+    <!-- Google Analytics (GDPR-Compliant) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BXKLXCKJ8X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+
+        // Only load Google Analytics if the user consents to cookies
+        function loadGoogleAnalytics() {
+            gtag('js', new Date());
+            gtag('config', 'G-BXKLXCKJ8X', { 'anonymize_ip': true }); // Anonymize IP addresses
+        }
+
+        // Check if the user has consented to cookies
+        if (localStorage.getItem('cookieConsent') === 'accepted') {
+            loadGoogleAnalytics();
+        }
+    </script>
+
+    <style>
+        /* Your existing CSS styles */
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <a href="#" class="nav-brand">Friend Referral Hub</a>
+        </div>
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <h1>Latest Offers and Bonus</h1>
+            <p>Get amazing bonuses and rewards with our premium referral links</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="referral-grid" id="referralGrid">
+            <!-- Cards will be dynamically inserted here -->
+        </div>
+    </main>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-consent-banner" style="position: fixed; bottom: 0; left: 0; right: 0; background: var(--secondary-color); color: white; padding: 1rem; text-align: center; z-index: 1000; display: none;">
+        <p>We use cookies to analyze traffic and improve your experience. By clicking "Accept", you consent to our use of cookies. <a href="#privacy-policy" style="color: var(--accent-color); text-decoration: underline;">Learn more</a></p>
+        <button id="accept-cookies" style="background: var(--accent-color); color: white; border: none; padding: 0.5rem 1rem; border-radius: 8px; cursor: pointer;">Accept</button>
+        <button id="reject-cookies" style="background: transparent; color: white; border: 1px solid white; padding: 0.5rem 1rem; border-radius: 8px; cursor: pointer;">Reject</button>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <i class="fas fa-check-circle"></i>
+        <span>Link copied to clipboard</span>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 Friend Referral Hub. All rights reserved.</p>
+            <p><a href="#privacy-policy" style="color: white; text-decoration: underline;">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <!-- Privacy Policy Section -->
+    <section id="privacy-policy" style="padding: 2rem; background: var(--background-color); margin-top: 2rem;">
+        <div class="container">
+            <h2>Privacy Policy</h2>
+            <p>This website uses Google Analytics to collect anonymous data about visitor behavior, such as device type, location, and pages visited. This data helps us improve the website. No personally identifiable information (PII) is collected. By using this website, you consent to the use of cookies as described in this policy.</p>
+        </div>
+    </section>
+
+    <script>
+        let toastTimeout;
+
+        // Cookie Consent Logic
+        const cookieConsentBanner = document.getElementById('cookie-consent-banner');
+        const acceptCookiesButton = document.getElementById('accept-cookies');
+        const rejectCookiesButton = document.getElementById('reject-cookies');
+
+        // Show the cookie consent banner if the user hasn't made a choice yet
+        if (!localStorage.getItem('cookieConsent')) {
+            cookieConsentBanner.style.display = 'block';
+        }
+
+        // Handle "Accept" button click
+        acceptCookiesButton.addEventListener('click', () => {
+            localStorage.setItem('cookieConsent', 'accepted');
+            cookieConsentBanner.style.display = 'none';
+            loadGoogleAnalytics(); // Load Google Analytics after consent
+        });
+
+        // Handle "Reject" button click
+        rejectCookiesButton.addEventListener('click', () => {
+            localStorage.setItem('cookieConsent', 'rejected');
+            cookieConsentBanner.style.display = 'none';
+        });
+
+        // Your existing JavaScript for referrals and toast notifications
+    </script>
+</body>
+</html>
