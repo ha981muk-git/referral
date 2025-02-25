@@ -3,288 +3,416 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Friend Referral Hub</title>
+    <title>Friend Referral Hub | Best Referral Programs in Germany</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-        
+    <link rel="alternate" hreflang="en" href="https://friendreferrals.de/" />
+    <link rel="alternate" hreflang="de" href="https://friendreferrals.de/de/" />
+
+    <!-- Meta tags -->
+    <meta name="description" content="Friend Referral Hub - Discover the best referral programs, rewards, and bonuses in Germany! Get exclusive deals with premium referral links.">
+    <meta name="keywords" content="referral programs, friend referral, rewards, bonuses, premium referral links, Germany">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    
+    <!-- Open Graph / Social Media tags -->
+    <meta property="og:title" content="Friend Referral Hub - Best Referral Programs & Bonuses">
+    <meta property="og:description" content="Discover the best referral programs, bonuses, and rewards in Germany. Get exclusive deals with premium referral links!">
+    <meta property="og:url" content="https://friendreferrals.de/">
+    <meta property="og:image" content="https://friendreferrals.de/preview-image.jpg">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Friend Referral Hub - Best Referral Programs & Bonuses">
+    <meta name="twitter:description" content="Find top referral programs, bonuses, and rewards in Germany. Get the best deals with premium referral links!">
+    <meta name="twitter:image" content="https://friendreferrals.de/preview-image.jpg">
+
     <!-- Schema Markup -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Friend Referral Hub",
-        "url": "https://friendreferrals.de/",
-        "description": "Discover the latest offers, bonuses, and rewards with premium referral links!",
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": {
-                "@type": "EntryPoint",
-                "urlTemplate": "https://friendreferrals.de/search?q={search_term_string}"
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Friend Referral Hub",
+            "alternateName": ["Referral Hub", "Friend Rewards"],
+            "url": "https://friendreferrals.de/",
+            "description": "Discover the latest offers, bonuses, and rewards with premium referral links!",
+            "inLanguage": "en",
+            "publisher": {
+                "@type": "Organization",
+                "name": "Friend Referral Hub",
+                "url": "https://friendreferrals.de/",
+                "logo": "https://friendreferrals.de/logo.png"
             },
-            "query-input": "required name=search_term_string"
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://friendreferrals.de/search?q={search_term_string}"
+                },
+                "query-input": "required name=search_term_string"
+            },
+            "keywords": "referral programs, friend referral, rewards, bonuses, best referral links"
         }
-    }
     </script>
     
-    <meta name="description" content="Friend Referral Hub - Discover the latest referrals, bonuses, and rewards with premium referral links">
-    <style>
-        /* Add your existing styles here */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .contact-section {
-            padding: 2rem;
-            background: var(--secondary-color);
-            color: white;
-            text-align: center;
-        }
-        .contact-section a {
-            color: var(--accent-color);
-            text-decoration: underline;
-        }
-        footer {
-            background: var(--secondary-color);
-            color: white;
-            padding: 1rem;
-            text-align: center;
-        }
-    </style>
+    <!-- CSS styles -->
     <style>
         :root {
-            --primary-color: #4f7de8;
-            --secondary-color: #1E293B;
-            --accent-color: #3B82F6;
-            --background-color: #F1F5F9;
-            --card-bg: #FFFFFF;
-            --text-primary: #0F172A;
-            --text-secondary: #64748B;
-            --success-color: #10B981;
+            --primary-color: #4a6fa5;
+            --secondary-color: #6c63ff;
+            --accent-color: #ff6b6b;
+            --background-color: #f8f9fa;
+            --card-background: #ffffff;
+            --text-color: #333333;
+            --text-light: #666666;
+            --border-radius: 8px;
+            --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
         }
 
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
         }
 
         body {
-            background-color: var(--background-color);
-            color: var(--text-primary);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
         }
 
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        a:hover {
+            color: var(--secondary-color);
+            text-decoration: underline;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+
+        /* Navigation */
         nav {
-            background: var(--primary-color);
-            padding: 1rem 2rem;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             position: sticky;
             top: 0;
-            height: 10px;
             z-index: 100;
         }
 
         .nav-content {
-            max-width: 1200px;
-            margin: 0 auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 1rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         .nav-brand {
-            color: white;
-            font-weight: 600;
-            font-size: 1.2rem;
-            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
         }
 
+        .nav-brand:before {
+            content: "\f1e0";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            margin-right: 10px;
+            color: var(--accent-color);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        /* Header */
         header {
-            background: var(--primary-color);
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
             color: white;
-            padding: 6rem 2rem;
+            padding: 4rem 0;
             text-align: center;
-            position: relative;
         }
 
         .header-content {
             max-width: 800px;
             margin: 0 auto;
-            position: relative;
-            z-index: 1;
+            padding: 0 1rem;
         }
 
         header h1 {
-            font-size: 3rem;
-            font-weight: 800;
-            margin-bottom: 1.5rem;
-            line-height: 1.2;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            animation: fadeInUp 1s ease;
         }
 
         header p {
-            font-size: 1.25rem;
+            font-size: 1.2rem;
             opacity: 0.9;
-            max-width: 600px;
-            margin: 0 auto;
+            margin-bottom: 2rem;
+            animation: fadeInUp 1.2s ease;
         }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
+        /* Referral Grid */
         .referral-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 2rem;
-            margin-top: 2rem;
+            margin-bottom: 3rem;
         }
 
         .referral-card {
-            background: var(--card-bg);
-            border-radius: 12px;
-            padding: 2rem;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-            transition: all 0.3s ease;
-            border: 1px solid rgba(0,0,0,0.05);
+            background-color: var(--card-background);
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            padding: 1.5rem;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
         }
 
         .referral-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
         }
 
         .referral-card h2 {
-            font-size: 1.5rem;
             margin-bottom: 1rem;
-            color: var(--text-primary);
-            font-weight: 700;
+            color: var(--primary-color);
+            font-size: 1.5rem;
         }
 
         .referral-card p {
-            color: var(--text-secondary);
+            color: var(--text-light);
             margin-bottom: 1.5rem;
-            font-size: 1.1rem;
+            line-height: 1.6;
         }
 
         .referral-link {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
+            background-color: #f7f9fc;
+            border-radius: var(--border-radius);
+            padding: 0.5rem;
         }
 
-        input[type="text"] {
-            padding: 0.75rem;
-            border: 1px solid #E2E8F0;
-            border-radius: 8px;
-            font-size: 1rem;
+        .referral-link input {
             width: 100%;
-            transition: all 0.3s ease;
-            background: #F8FAFC;
-        }
-
-        input[type="text"]:focus {
-            outline: none;
-            border-color: var(--accent-color);
-            background: white;
+            padding: 0.75rem;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            color: #555;
         }
 
         .button-group {
             display: flex;
-            gap: 0.75rem;
+            gap: 0.5rem;
         }
 
         .btn {
             flex: 1;
-            padding: 0.75rem 1.5rem;
+            padding: 0.75rem 1rem;
             border: none;
-            border-radius: 8px;
-            font-weight: 600;
+            border-radius: 4px;
             cursor: pointer;
-            transition: all 0.2s ease;
+            font-weight: 600;
             display: flex;
-            align-items: center;
             justify-content: center;
+            align-items: center;
             gap: 0.5rem;
+            transition: var(--transition);
         }
 
         .copy-btn {
-            background-color: var(--accent-color);
-            color: white;
+            background-color: #e9ecef;
+            color: #495057;
         }
 
         .copy-btn:hover {
-            background-color: #2563EB;
-            transform: translateY(-1px);
+            background-color: #dee2e6;
         }
 
         .visit-btn {
-            background-color: #F1F5F9;
-            color: var(--text-primary);
-            text-decoration: none;
-            border: 1px solid #E2E8F0;
+            background-color: var(--primary-color);
+            color: white;
         }
 
         .visit-btn:hover {
-            background-color: #E2E8F0;
-            transform: translateY(-1px);
+            background-color: var(--secondary-color);
+            text-decoration: none;
         }
 
-        .toast {
+        .success-animation {
+            background-color: #28a745 !important;
+            color: white !important;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 3rem;
+        }
+
+        section h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #eeeeee;
+            padding-bottom: 0.5rem;
+        }
+
+        section p {
+            margin-bottom: 1rem;
+        }
+
+        /* Toast Notification */
+        #toast {
+            visibility: hidden;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 4px;
+            padding: 12px;
             position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: var(--success-color);
-            color: white;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            opacity: 0;
-            transform: translateY(100%);
-            transition: all 0.3s ease;
             z-index: 1000;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s;
+            opacity: 0;
         }
 
-        .toast.show {
+        #toast.show {
+            visibility: visible;
             opacity: 1;
-            transform: translateY(0);
         }
 
+        /* Cookie Notice */
+        #cookie-notice {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 1rem 2rem;
+            text-align: center;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 999;
+        }
+
+        /* Footer */
         footer {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 3rem 2rem;
-            margin-top: 4rem;
+            background-color: #2f3542;
+            color: #f1f2f6;
+            padding: 2rem 0;
         }
 
         .footer-content {
             max-width: 1200px;
             margin: 0 auto;
+            padding: 0 2rem;
             text-align: center;
-            opacity: 0.8;
         }
 
+        footer p {
+            margin-bottom: 1rem;
+        }
+
+        footer a {
+            color: #a4b0be;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        footer a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
         @media (max-width: 768px) {
-            header {
-                padding: 4rem 1rem;
+            .nav-content, .button-group {
+                flex-direction: column;
+                gap: 0.5rem;
             }
-
+            
             header h1 {
-                font-size: 2.5rem;
+                font-size: 2rem;
             }
-
-            .container {
+            
+            .referral-card {
                 padding: 1rem;
             }
+            
+            #cookie-notice {
+                padding: 0.8rem 1rem;
+            }
+            
+            .referral-grid {
+                grid-template-columns: 1fr;
+            }
+        }
 
-            .referral-card {
-                padding: 1.5rem;
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .referral-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Loading Animation */
+        .loader {
+            display: flex;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+
+        .loader .dot {
+            width: 12px;
+            height: 12px;
+            margin: 0 5px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+            display: inline-block;
+            animation: loadingDots 1.4s infinite ease-in-out both;
+        }
+
+        .loader .dot:nth-child(1) {
+            animation-delay: -0.32s;
+        }
+
+        .loader .dot:nth-child(2) {
+            animation-delay: -0.16s;
+        }
+
+        @keyframes loadingDots {
+            0%, 80%, 100% { 
+                transform: scale(0);
+            } 40% { 
+                transform: scale(1);
             }
         }
     </style>
@@ -293,64 +421,115 @@
     <nav>
         <div class="nav-content">
             <a href="#" class="nav-brand">Friend Referral Hub</a>
+            <div class="nav-links">
+                <a href="#contact">Contact</a>
+                <a href="#privacy-policy">Privacy</a>
+            </div>
         </div>
     </nav>
 
     <header>
         <div class="header-content">
-            <h1>Latest Offers in Germany</h1>
-            <p>Get amazing bonuses and rewards with our premium referral links</p>
+            <h1>Best Referral Programs in Germany</h1>
+            <p>Get exclusive bonuses and rewards with our premium referral links</p>
         </div>
     </header>
 
     <main class="container">
+        <div id="loading" class="loader">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+        
         <div class="referral-grid" id="referralGrid">
             <!-- Cards will be dynamically inserted here -->
         </div>
+
+        <!-- Privacy Policy Section -->
+        <section id="privacy-policy">
+            <h2>Privacy Policy</h2>
+            <p>This website is committed to protecting your privacy and providing a safe browsing experience.</p>
+            <p>Key points to know:</p>
+            <ul style="list-style-type: none; padding-left: 1.5rem; margin-bottom: 1.5rem;">
+                <li>✓ We do not collect any personal data from visitors</li>
+                <li>✓ No cookies are used for tracking purposes</li>
+                <li>✓ No user analytics or visitor tracking is implemented</li>
+            </ul>
+            <p>We use Google Fonts for styling – please refer to <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a> for information about their data practices.</p>
+            <p>Please note that referral links may redirect you to third-party websites that have their own privacy policies and data collection practices.</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Need a personal invitation or referral code? I'm here to help!</p>
+            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:ha981muk@gmail.com">ha981muk@gmail.com</a></p>
+            <p>I typically respond within 24-48 hours.</p>
+        </section>
     </main>
 
-    <!-- Cookie Notice -->
-    <div id="cookie-notice" style="position: fixed; bottom: 0; left: 0; right: 0; background: var(--secondary-color); color: white; padding: 1rem; text-align: center; z-index: 1000;">
-        <p>This website does not use cookies or collect any personal data. <a href="#privacy-policy" style="color: var(--accent-color); text-decoration: underline;">Learn more</a></p>
-    </div>
-
     <!-- Toast Notification -->
-    <div id="toast" class="toast">
-        <i class="fas fa-check-circle"></i>
-        <span>Link copied to clipboard</span>
+    <div id="toast">Link copied to clipboard!</div>
+
+    <!-- Cookie Notice -->
+    <div id="cookie-notice">
+        <p>This website does not use cookies for tracking. <a href="#privacy-policy">Privacy Policy</a></p>
+        <button id="cookie-close" style="background: #eee; border: none; padding: 5px 10px; margin-left: 10px; border-radius: 4px; cursor: pointer;">Got it</button>
     </div>
 
-    <section id="privacy-policy" style="padding: 2rem; background: var(--background-color); margin-top: 2rem;">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>If you have a specific request or need an invitation or referral code, feel free to reach out to me.</p>
-            <p>Email: <a href="mailto:ha981muk@gmail.com">ha981muk@gmail.com</a></p>
-        </div>
-    </section>
     <footer>
         <div class="footer-content">
+            <!-- Legal Disclaimers -->
+            <p style="font-weight: bold;">Important Legal Notes:</p>
+            <p>⚠️ This is a personal website – not a business. Referral links are shared for informational purposes only.</p>
+            <p>⚠️ Disclosure: Some links are referral links. I may receive rewards if you use them, at no extra cost to you.</p>
+            
+            <!-- Standard Footer -->
             <p>© 2024 Friend Referral Hub. All rights reserved.</p>
-            <p><a href="#privacy-policy" style="color: white; text-decoration: underline;">Privacy Policy</a></p>
-            <p>This website does not collect, store, or process any personal data. It is a simple platform to share referral links. No cookies or tracking technologies are used.</p>
-            <p>Disclosure: This website contains referral links. If you click on these links and make a purchase or sign up, we may earn a commission at no additional cost to us.</p>
-            <br>
+            <p><a href="#privacy-policy">Privacy Policy</a> | <a href="#contact">Contact</a></p>
+            <p>No personal data is collected or stored. Third-party services may have their own policies.</p>
         </div>
     </footer>
 
     <script>
         let toastTimeout;
 
+        // Show loading animation initially
+        const loadingElement = document.getElementById('loading');
+        
         async function loadReferrals() {
             try {
                 const response = await fetch('referrals.json');
                 const data = await response.json();
                 const referralGrid = document.getElementById('referralGrid');
                 
+                // Hide loading animation
+                loadingElement.style.display = 'none';
+                
+                // Sort referrals by name (optional)
+                data.referrals.sort((a, b) => a.name.localeCompare(b.name));
+                
                 data.referrals.forEach(referral => {
                     const card = document.createElement('article');
                     card.className = 'referral-card';
+                    
+                    // Create category badge if available
+                    let categoryBadge = '';
+                    if (referral.category) {
+                        categoryBadge = `<span style="position: absolute; top: 10px; right: 10px; background-color: var(--accent-color); color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.7rem;">${referral.category}</span>`;
+                    }
+                    
+                    // Create rewards or bonus info if available
+                    let bonusInfo = '';
+                    if (referral.bonus) {
+                        bonusInfo = `<p style="color: var(--accent-color); font-weight: bold;"><i class="fas fa-gift"></i> ${referral.bonus}</p>`;
+                    }
+                    
                     card.innerHTML = `
+                        ${categoryBadge}
                         <h2>${referral.name}</h2>
+                        ${bonusInfo}
                         <p>${referral.description}</p>
                         <div class="referral-link">
                             <input type="text" value="${referral.link}" readonly aria-label="Referral link">
@@ -359,7 +538,7 @@
                                     <i class="fas fa-copy"></i>
                                     Copy
                                 </button>
-                                <a href="${referral.link}" target="_blank" class="btn visit-btn" aria-label="Visit referral link">
+                                <a href="${referral.link}" target="_blank" rel="noopener noreferrer" class="btn visit-btn" aria-label="Visit referral link">
                                     <i class="fas fa-external-link-alt"></i>
                                     Visit
                                 </a>
@@ -368,8 +547,17 @@
                     `;
                     referralGrid.appendChild(card);
                 });
+                
+                // If no referrals found
+                if (data.referrals.length === 0) {
+                    referralGrid.innerHTML = '<p style="grid-column: 1/-1; text-align: center; padding: 2rem;">No referral programs available at the moment. Please check back later!</p>';
+                }
+                
             } catch (error) {
                 console.error('Error loading referrals:', error);
+                loadingElement.style.display = 'none';
+                document.getElementById('referralGrid').innerHTML = 
+                    '<p style="grid-column: 1/-1; text-align: center; padding: 2rem; color: #dc3545;"><i class="fas fa-exclamation-triangle"></i> Unable to load referral programs. Please try again later.</p>';
             }
         }
 
@@ -378,11 +566,16 @@
             input.select();
             document.execCommand('copy');
             
+            // Success animation
             button.classList.add('success-animation');
+            button.innerHTML = '<i class="fas fa-check"></i> Copied!';
+            
             setTimeout(() => {
                 button.classList.remove('success-animation');
-            }, 300);
+                button.innerHTML = '<i class="fas fa-copy"></i> Copy';
+            }, 1500);
 
+            // Show toast notification
             const toast = document.getElementById('toast');
             toast.classList.add('show');
             
@@ -391,6 +584,27 @@
                 toast.classList.remove('show');
             }, 3000);
         }
+
+        // Close cookie notice
+        document.getElementById('cookie-close').addEventListener('click', function() {
+            document.getElementById('cookie-notice').style.display = 'none';
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
 
         document.addEventListener('DOMContentLoaded', loadReferrals);
     </script>
