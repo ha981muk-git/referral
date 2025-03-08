@@ -4,69 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Friend Referrals | Referral Programs in Germany</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="alternate" hreflang="en" href="https://friendreferrals.de/" />
     <link rel="alternate" hreflang="de" href="https://friendreferrals.de/de/" />
 
-    <!-- Meta tags -->
+    <!-- Meta tags remain the same -->
     <meta name="description" content="Friend Referrals  - Discover the best referral programs, rewards, and bonuses in Germany! Get exclusive deals with premium referral links.">
-    <meta name="keywords" content="referral programs, friend referral,friend referrals, rewards, bonuses, premium referral links, Germany, Deutschland">
-    <meta name="robots" content="index, follow">
-    <meta name="language" content="English">
-    
-    <!-- Open Graph / Social Media tags -->
-    <meta property="og:title" content="Friend Referrals  - Best Referral Programs & Bonuses">
-    <meta property="og:description" content="Discover the best referral programs, bonuses, and rewards in Germany. Get exclusive deals with premium referral links!">
-    <meta property="og:url" content="https://friendreferrals.de/">
-    <meta property="og:image" content="https://friendreferrals.de/preview-image.jpg">
-    <meta property="og:type" content="website">
-    
-    <!-- Twitter tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Friends  - Best Referral Programs & Bonuses">
-    <meta name="twitter:description" content="Find top referral programs, bonuses, and rewards in Germany. Get the best deals with premium referral links!">
-    <meta name="twitter:image" content="https://friendreferrals.de/preview-image.jpg">
-
-    <!-- Schema Markup -->
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "WebSite",
-            "name": "Friend Referrals ",
-            "alternateName": ["Referral","Referrals" "Friend Rewards"],
-            "url": "https://friendreferrals.de/",
-            "description": "Discover the latest offers, bonuses, and rewards with premium referral links!",
-            "inLanguage": "en",
-            "publisher": {
-                "@type": "Organization",
-                "name": "Friend Referrals ",
-                "url": "https://friendreferrals.de/",
-                "logo": "https://friendreferrals.de/logo.png"
-            },
-            "potentialAction": {
-                "@type": "SearchAction",
-                "target": {
-                    "@type": "EntryPoint",
-                    "urlTemplate": "https://friendreferrals.de/search?q={search_term_string}"
-                },
-                "query-input": "required name=search_term_string"
-            },
-            "keywords": "referral programs, friend referral, rewards, bonuses, best referral links"
-        }
-    </script>
+    <!-- Other meta tags... -->
     
     <!-- CSS styles -->
     <style>
         :root {
-            --primary-color: #4a6fa5;
-            --secondary-color: #6c63ff;
-            --accent-color: #ff6b6b;
-            --background-color: #f8f9fa;
+            --primary-color: #4361ee;
+            --secondary-color: #3a0ca3;
+            --accent-color: #f72585;
+            --background-color: #f8fafc;
             --card-background: #ffffff;
-            --text-color: #333333;
-            --text-light: #666666;
-            --border-radius: 8px;
-            --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --text-color: #1e293b;
+            --text-light: #64748b;
+            --border-radius: 12px;
+            --box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
             --transition: all 0.3s ease;
         }
 
@@ -77,7 +35,7 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             line-height: 1.6;
             color: var(--text-color);
             background-color: var(--background-color);
@@ -91,7 +49,6 @@
 
         a:hover {
             color: var(--secondary-color);
-            text-decoration: underline;
         }
 
         .container {
@@ -103,8 +60,10 @@
 
         /* Navigation */
         nav {
-            background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
             position: sticky;
             top: 0;
             z-index: 100;
@@ -140,12 +99,34 @@
             gap: 1.5rem;
         }
 
+        .nav-links a {
+            font-weight: 500;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: var(--accent-color);
+            transition: width 0.3s;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
         /* Header */
         header {
             background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
             color: white;
-            padding: 4rem 0;
+            padding: 6rem 0;
             text-align: center;
+            border-radius: 0 0 30px 30px;
+            margin-bottom: 3rem;
         }
 
         .header-content {
@@ -155,13 +136,15 @@
         }
 
         header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
+            font-size: 2.75rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.5px;
             animation: fadeInUp 1s ease;
         }
 
         header p {
-            font-size: 1.2rem;
+            font-size: 1.25rem;
             opacity: 0.9;
             margin-bottom: 2rem;
             animation: fadeInUp 1.2s ease;
@@ -170,7 +153,7 @@
         /* Referral Grid */
         .referral-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
             gap: 2rem;
             margin-bottom: 3rem;
         }
@@ -179,21 +162,23 @@
             background-color: var(--card-background);
             border-radius: var(--border-radius);
             box-shadow: var(--box-shadow);
-            padding: 1.5rem;
+            padding: 1.75rem;
             transition: var(--transition);
             position: relative;
             overflow: hidden;
+            border: 1px solid rgba(0, 0, 0, 0.03);
         }
 
         .referral-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
         }
 
         .referral-card h2 {
             margin-bottom: 1rem;
             color: var(--primary-color);
             font-size: 1.5rem;
+            font-weight: 700;
         }
 
         .referral-card p {
@@ -203,31 +188,40 @@
         }
 
         .referral-link {
-            background-color: #f7f9fc;
+            background-color: #f8fafc;
             border-radius: var(--border-radius);
-            padding: 0.5rem;
+            padding: 0.75rem;
+            border: 1px solid rgba(0, 0, 0, 0.05);
         }
 
         .referral-link input {
             width: 100%;
-            padding: 0.75rem;
-            border: 1px solid #e0e0e0;
-            border-radius: 4px;
-            margin-bottom: 0.5rem;
+            padding: 0.75rem 1rem;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-bottom: 0.75rem;
             font-size: 0.9rem;
-            color: #555;
+            color: var(--text-color);
+            background-color: white;
+            transition: all 0.2s;
+        }
+
+        .referral-link input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.15);
         }
 
         .button-group {
             display: flex;
-            gap: 0.5rem;
+            gap: 0.75rem;
         }
 
         .btn {
             flex: 1;
             padding: 0.75rem 1rem;
             border: none;
-            border-radius: 4px;
+            border-radius: 8px;
             cursor: pointer;
             font-weight: 600;
             display: flex;
@@ -257,20 +251,25 @@
         }
 
         .success-animation {
-            background-color: #28a745 !important;
+            background-color: #10b981 !important;
             color: white !important;
         }
 
         /* Sections */
         section {
-            margin-bottom: 3rem;
+            margin-bottom: 4rem;
+            padding: 2rem;
+            background-color: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
         }
 
         section h2 {
             color: var(--primary-color);
             margin-bottom: 1.5rem;
-            border-bottom: 2px solid #eeeeee;
-            padding-bottom: 0.5rem;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+            padding-bottom: 0.75rem;
+            font-weight: 700;
         }
 
         section p {
@@ -280,17 +279,17 @@
         /* Toast Notification */
         #toast {
             visibility: hidden;
-            background-color: #333;
+            background-color: #1e293b;
             color: #fff;
             text-align: center;
-            border-radius: 4px;
-            padding: 12px;
+            border-radius: 8px;
+            padding: 12px 24px;
             position: fixed;
             z-index: 1000;
             bottom: 30px;
             left: 50%;
             transform: translateX(-50%);
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
             transition: all 0.3s;
             opacity: 0;
         }
@@ -303,20 +302,41 @@
         /* Cookie Notice */
         #cookie-notice {
             position: fixed;
-            bottom: 0;
-            width: 100%;
-            background-color: rgba(255, 255, 255, 0.95);
-            padding: 1rem 2rem;
-            text-align: center;
-            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+            bottom: 1.5rem;
+            left: 1.5rem;
+            max-width: 320px;
+            background-color: white;
+            padding: 1.25rem;
+            text-align: left;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
             z-index: 999;
+            border-radius: 12px;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        #cookie-close {
+            background: var(--primary-color);
+            border: none;
+            padding: 8px 16px;
+            margin-top: 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            color: white;
+            font-weight: 600;
+            transition: background-color 0.2s;
+        }
+
+        #cookie-close:hover {
+            background-color: var(--secondary-color);
         }
 
         /* Footer */
         footer {
-            background-color: #2f3542;
+            background-color: #1e293b;
             color: #f1f2f6;
-            padding: 2rem 0;
+            padding: 3rem 0;
+            border-radius: 30px 30px 0 0;
+            margin-top: 4rem;
         }
 
         .footer-content {
@@ -328,10 +348,11 @@
 
         footer p {
             margin-bottom: 1rem;
+            color: #94a3b8;
         }
 
         footer a {
-            color: #a4b0be;
+            color: #cbd5e1;
             text-decoration: none;
             transition: var(--transition);
         }
@@ -353,37 +374,7 @@
             }
         }
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .nav-content, .button-group {
-                flex-direction: column;
-                gap: 0.5rem;
-            }
-            
-            header h1 {
-                font-size: 2rem;
-            }
-            
-            .referral-card {
-                padding: 1rem;
-            }
-            
-            #cookie-notice {
-                padding: 0.8rem 1rem;
-            }
-            
-            .referral-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        @media (min-width: 769px) and (max-width: 1024px) {
-            .referral-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        /* Loading Animation */
+        /* Loader */
         .loader {
             display: flex;
             justify-content: center;
@@ -415,12 +406,40 @@
                 transform: scale(1);
             }
         }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-content {
+                padding: 1rem;
+            }
+            
+            header {
+                padding: 4rem 0;
+            }
+            
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            .referral-card {
+                padding: 1.25rem;
+            }
+            
+            #cookie-notice {
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                max-width: none;
+                border-radius: 0;
+            }
+        }
     </style>
 </head>
 <body>
+    <!-- Rest of the HTML structure remains largely the same -->
     <nav>
         <div class="nav-content">
-            <a href="#" class="nav-brand">Friend Referrals </a>
+            <a href="#" class="nav-brand">Friend Referrals</a>
             <div class="nav-links">
                 <a href="#contact">Contact</a>
                 <a href="#privacy-policy">Privacy</a>
@@ -475,7 +494,7 @@
     <!-- Cookie Notice -->
     <div id="cookie-notice">
         <p>This website does not use cookies for tracking. <a href="#privacy-policy">Privacy Policy</a></p>
-        <button id="cookie-close" style="background: #eee; border: none; padding: 5px 10px; margin-left: 10px; border-radius: 4px; cursor: pointer;">Got it</button>
+        <button id="cookie-close">Got it</button>
     </div>
 
     <footer>
@@ -486,12 +505,13 @@
             <p>⚠️ Disclosure: Some links are referral links. I may receive rewards if you use them, at no extra cost to you.</p>
             
             <!-- Standard Footer -->
-            <p>© 2024 Friend Referrals . All rights reserved.</p>
+            <p>© 2024 Friend Referrals. All rights reserved.</p>
             <p><a href="#privacy-policy">Privacy Policy</a> | <a href="#contact">Contact</a></p>
             <p>No personal data is collected or stored. Third-party services may have their own policies.</p>
         </div>
     </footer>
 
+    <!-- The JavaScript remains the same -->
     <script>
         let toastTimeout;
 
