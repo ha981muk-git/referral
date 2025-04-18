@@ -1,0 +1,11 @@
+server {
+    listen 80;
+    server_name friendreferrals.de;
+    
+    location /.well-known/acme-challenge/ {
+        root /var/www/html;
+    }
+    
+    # other configuration settings...
+}
+
