@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="alternate" hreflang="en" href="https://friendreferrals.de/" />
     <link rel="alternate" hreflang="de" href="https://friendreferrals.de/de/" />
+    <link rel="stylesheet" href="css/style.css" />
 
     <!-- Meta tags remain the same -->
     <meta name="description" content="Friend Referrals  - Discover the best referral programs, rewards, and bonuses in Germany! Get exclusive deals with premium referral links.">
@@ -117,37 +118,6 @@
 
         .nav-links a:hover::after {
             width: 100%;
-        }
-
-        /* Header */
-        header {
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-            color: white;
-            padding: 6rem 0;
-            text-align: center;
-            border-radius: 0 0 30px 30px;
-            margin-bottom: 3rem;
-        }
-
-        .header-content {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 1rem;
-        }
-
-        header h1 {
-            font-size: 2.75rem;
-            font-weight: 800;
-            margin-bottom: 1.5rem;
-            letter-spacing: -0.5px;
-            animation: fadeInUp 1s ease;
-        }
-
-        header p {
-            font-size: 1.25rem;
-            opacity: 0.9;
-            margin-bottom: 2rem;
-            animation: fadeInUp 1.2s ease;
         }
 
         /* Referral Grid */
@@ -330,38 +300,21 @@
             background-color: var(--secondary-color);
         }
 
-        /* Footer */
-        footer {
-            background-color: #1e293b;
-            color: #f1f2f6;
-            padding: 3rem 0;
-            border-radius: 30px 30px 0 0;
-            margin-top: 4rem;
-        }
 
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            text-align: center;
-        }
 
-        footer p {
-            margin-bottom: 1rem;
-            color: #94a3b8;
-        }
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    footer {
+        padding: 2rem 1rem;
+    }
+    
+    .footer-content {
+        padding: 1rem;
+    }
+}
 
-        footer a {
-            color: #cbd5e1;
-            text-decoration: none;
-            transition: var(--transition);
-        }
 
-        footer a:hover {
-            color: white;
-            text-decoration: underline;
-        }
-
+        
         /* Animations */
         @keyframes fadeInUp {
             from {
@@ -441,16 +394,15 @@
         <div class="nav-content">
             <a href="#" class="nav-brand">Friend Referrals</a>
             <div class="nav-links">
-                <a href="#contact">Contact</a>
-                <a href="#privacy-policy">Privacy</a>
+                <a href="privacy-policy.html##contact">Contact</a>
+                <a href="privacy-policy.html#privacy-policy">Privacy</a>
             </div>
         </div>
     </nav>
 
     <header>
         <div class="header-content">
-            <h1>Earn From Referral Programs in Germany</h1>
-            <p>Get exclusive bonuses and rewards with our premium referral links</p>
+            <h1>Earn From Referral Bonus in Germany</h1>
         </div>
     </header>
 
@@ -465,27 +417,7 @@
             <!-- Cards will be dynamically inserted here -->
         </div>
 
-        <!-- Privacy Policy Section -->
-        <section id="privacy-policy">
-            <h2>Privacy Policy</h2>
-            <p>This website is committed to protecting your privacy and providing a safe browsing experience.</p>
-            <p>Key points to know:</p>
-            <ul style="list-style-type: none; padding-left: 1.5rem; margin-bottom: 1.5rem;">
-                <li>✓ We do not collect any personal data from visitors</li>
-                <li>✓ No cookies are used for tracking purposes</li>
-                <li>✓ No user analytics or visitor tracking is implemented</li>
-            </ul>
-            <p>We use Google Fonts for styling – please refer to <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a> for information about their data practices.</p>
-            <p>Please note that referral links may redirect you to third-party websites that have their own privacy policies and data collection practices.</p>
-        </section>
 
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Need a personal invitation or referral code? I'm here to help!</p>
-            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:harsh.mukhiya.official@gmail.com">harsh.mukhiya.official@gmail.com</a></p>
-            <p>I typically respond within 24-48 hours.</p>
-        </section>
     </main>
 
     <!-- Toast Notification -->
@@ -493,7 +425,7 @@
 
     <!-- Cookie Notice -->
     <div id="cookie-notice">
-        <p>This website does not use cookies for tracking. <a href="#privacy-policy">Privacy Policy</a></p>
+        <p>This website does not use cookies for tracking. <a href="privacy-policy.html">Privacy Policy</a></p>
         <button id="cookie-close">Got it</button>
     </div>
 
@@ -507,11 +439,15 @@
             
             <p>⚠️ I am not responsible for differences in offers you may receive, as offers change continuously.</p>
             <!-- Standard Footer -->
-            <p>© 2024 Friend Referrals. All rights reserved.</p>
-            <p><a href="#privacy-policy">Privacy Policy</a> | <a href="#contact">Contact</a></p>
-            <p>No personal data is collected or stored. Third-party services may have their own policies.</p>
+
+
+        </div>
+         <div  class="footer-content">
+            <p class="col-md-6" >© 2024 Friend Referrals. All rights reserved.</p>
         </div>
     </footer>
+
+    
 
     <!-- The JavaScript remains the same -->
     <script>
